@@ -1,2 +1,2 @@
-# lamarbot
-Twitter Bot that sends Kendrick Lamar Verses
+# Djema-Web
+Web app built by Rami Djema
