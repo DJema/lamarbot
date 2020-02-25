@@ -5,8 +5,10 @@ import {
   ThemeProvider,
 } from '@material-ui/core';
 
+import WineCard from '../components/WineCard';
+
 export default () => (
   <ThemeProvider theme={theme}>
-    <Typography variant="h4">Wine</Typography>
+    <WineCard />
   </ThemeProvider>
 );
