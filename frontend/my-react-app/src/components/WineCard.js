@@ -16,9 +16,11 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 
+import CustomizedRatings from './Rating';
+
 const useStyles = makeStyles(theme => ({
   root: {
-    maxWidth: 445,
+    maxWidth: 400,
   },
   media: {
     height: 0,
@@ -50,11 +52,6 @@ export default function RecipeReviewCard() {
   return (
     <Card className={classes.root}>
       <CardHeader
-        avatar={
-          <Avatar aria-label="recipe" className={classes.avatar}>
-            T
-          </Avatar>
-        }
         action={
           <IconButton aria-label="settings">
             <MoreVertIcon />
@@ -70,6 +67,7 @@ export default function RecipeReviewCard() {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
+          <CustomizedRatings/>
           Two Sisters wine
         </Typography>
       </CardContent>
